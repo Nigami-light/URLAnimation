@@ -10,7 +10,7 @@ let myPidor = [
 
 let urlAnimate = () => {
     window.location.hash = myPidor[Math.floor((Date.now() / 100) % myPidor.length)];
-    setTimeout(urlAnimate, 1000);
+    setTimeout(urlAnimate, 100);
 };
 
 urlAnimate();
